@@ -325,7 +325,7 @@ You should remove the files in /etc/wireguard/ and configs/ as follows:
 sudo rm -rf /etc/wireguard/*
 rm -rf configs/*
 ``` 
-
+###### Note: Makesure to double check /etc/wireguard directory as ROOT user to ensure all files are removed
 And then immediately re-run `./algo` and provide a domain name or IP address in response to the question referenced above. 
 
 ### Wireguard: Unable to find 'configs/...' in expected paths
@@ -344,6 +344,8 @@ This error is usually hit when using the local install option on a server that i
 sudo rm -rf /etc/wireguard/*
 rm -rf configs/*
 ```
+
+###### Note: Makesure to check double /etc/wireguard directory as ROOT user to ensure all files are removed
 Then immediately re-run `./algo`.
 
 ### Ubuntu Error: "unable to write 'random state'" when generating CA password
